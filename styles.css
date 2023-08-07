@@ -1,0 +1,54 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+main {
+  width: 100%;
+}
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.header-container div > svg {
+  width: 5.5rem;
+}
+.nav-container {
+  display: none;
+}
+.nav-container ul {
+  display: flex;
+  gap: 1rem;
+}
