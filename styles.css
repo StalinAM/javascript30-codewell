@@ -50,7 +50,8 @@ button {
   padding: 1rem;
 }
 .header-container div,
-button {
+button,
+.menu-expanded header div {
   display: flex;
   align-items: center;
 }
@@ -139,4 +140,48 @@ span {
   color: #133416;
   text-decoration: none;
   font-weight: 600;
+}
+.menu-expanded {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 1rem 1.5rem;
+  width: 340px;
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.menu-expanded header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-expanded header h3 {
+  font-size: 0.75rem;
+  color: #8898aa;
+  font-weight: 600;
+}
+.menu-expanded header div > svg {
+  width: 1.25rem;
+}
+.menu-expanded section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.menu-item {
+  display: flex;
+  gap: 0.5rem;
+}
+.menu-item div > svg {
+  width: 1.5rem;
+}
+.menu-expanded div h4 {
+  font-size: 0.875rem;
+}
+.menu-expanded div p {
+  color: #8898aa;
+  font-size: 0.75rem;
 }
