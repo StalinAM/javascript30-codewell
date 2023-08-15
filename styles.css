@@ -50,10 +50,10 @@ button {
   padding: 1rem;
 }
 .header-container div,
-button,
-.menu-expanded header div {
+button {
   display: flex;
   align-items: center;
+  background-color: transparent;
 }
 .header-container div > svg {
   width: 6.5rem;
@@ -163,7 +163,7 @@ span {
   color: #8898aa;
   font-weight: 600;
 }
-.menu-expanded header div > svg {
+.menu-expanded header button > svg {
   width: 1.25rem;
 }
 .menu-expanded section {
