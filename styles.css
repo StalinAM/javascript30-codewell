@@ -54,6 +54,7 @@ button {
   display: flex;
   align-items: center;
   background-color: transparent;
+  cursor: pointer;
 }
 .header-container div > svg {
   width: 6.5rem;
@@ -66,10 +67,14 @@ button {
 }
 .nav-container ul {
   display: flex;
-  gap: 1rem;
+  gap: 1.125rem;
 }
-.nav-container ul li a {
-  text-decoration: none;
+
+.nav-container ul li:hover {
+  color: #133416;
+}
+.nav-container ul li {
+  cursor: pointer;
 }
 .main-container {
   padding: 1rem;
@@ -92,7 +97,7 @@ button {
 }
 p,
 span,
-a {
+li {
   color: #858585;
   font-size: 0.875rem;
 }
@@ -199,5 +204,19 @@ a {
   }
   .nav-container {
     display: flex;
+  }
+  p,
+  span,
+  li {
+    font-size: 1rem;
+  }
+  .header-container {
+    padding: 1.5rem;
+  }
+  .header-container div > svg {
+    width: 8rem;
+  }
+  .main-container {
+    min-height: calc(100vh - 142px);
   }
 }
