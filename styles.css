@@ -68,6 +68,9 @@ button {
   display: flex;
   gap: 1rem;
 }
+.nav-container ul li a {
+  text-decoration: none;
+}
 .main-container {
   padding: 1rem;
 }
@@ -88,7 +91,8 @@ button {
   font-size: 2.125rem;
 }
 p,
-span {
+span,
+a {
   color: #858585;
   font-size: 0.875rem;
 }
@@ -184,4 +188,16 @@ span {
 .menu-expanded div p {
   color: #8898aa;
   font-size: 0.75rem;
+}
+@media (min-width: 780px) {
+  body {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  .header-container button {
+    display: none;
+  }
+  .nav-container {
+    display: flex;
+  }
 }
