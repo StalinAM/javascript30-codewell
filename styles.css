@@ -86,7 +86,10 @@ button {
   align-items: start;
   gap: 1rem;
 }
-
+.about-container img {
+  display: none;
+  width: 100%;
+}
 .about-container h1 {
   font-size: 2.125rem;
   font-weight: 800;
@@ -109,6 +112,7 @@ li {
   border-radius: 5px;
   font-size: 1rem;
   font-weight: 600;
+  display: flex;
 }
 .about-container footer {
   display: flex;
@@ -218,5 +222,15 @@ li {
   }
   .main-container {
     min-height: calc(100vh - 142px);
+  }
+  .about-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+  .about-container img {
+    display: block;
+    width: 50%;
   }
 }
