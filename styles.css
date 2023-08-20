@@ -249,4 +249,7 @@ li {
   .company-container {
     padding-bottom: 3rem;
   }
+  .menu-expanded header {
+    display: none;
+  }
 }
